@@ -1,0 +1,64 @@
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .container .card .wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .card .wrapper .card-right,
+    .container .card .wrapper .card-right img {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+
+    .card .wrapper .card-left {
+        border-radius: 0 0 10px 10px;
+        gap: 20px;
+    }
+
+    .card .wrapper .card-left .text-content h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .card .wrapper .card-left .text-content p {
+        text-align: center;
+    }
+    
+    .card .wrapper .card-left .card-score {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card .wrapper .card-left .card-score .companies,
+    .card .wrapper .card-left .card-score .templates,
+    .card .wrapper .card-left .card-score .queries {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 320px) {
+
+    .container .card .wrapper .card-right {
+        width: 100%;
+    }
+
+    .container .card .wrapper .card-left {
+        width: 100%;
+    }
+
+    .card .wrapper .card-left .card-score .companies,
+    .card .wrapper .card-left .card-score .templates,
+    .card .wrapper .card-left .card-score .queries {
+        font-size: 20%;
+    }
+}
